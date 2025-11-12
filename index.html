@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOM KRAUSS DESING SRL — Mobilier la comandă și bucătării premium</title>
+<meta name="description" content="TOM KRAUSS DESING SRL proiectează și fabrică mobilier rezidențial și instituțional, cu specializare în corpuri de bucătărie, fronturi premium și soluții personalizate.">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+.modal-open{overflow:hidden}
+.bg-hero{background-image:url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2060&auto=format&fit=crop');background-size:cover;background-position:center}
+.backdrop{background:radial-gradient(60% 60% at 20% 20%,rgba(12,83,61,.55),rgba(5,40,30,.85)),linear-gradient(180deg,rgba(7,50,37,.65) 0%,rgba(8,30,24,.90) 50%,rgba(6,22,18,.95) 100%)}
+.card-shadow{box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.neu{box-shadow:12px 12px 28px rgba(24,41,34,.45),-12px -12px 28px rgba(255,255,255,.05)}
+.grid-gap{gap:1.25rem}
+.btn{transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-2px)}
+.section{padding-top:5rem;padding-bottom:5rem}
+</style>
+</head>
+<body class="antialiased text-gray-100 bg-green-900">
+
+<header class="fixed top-0 left-0 right-0 z-40">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between py-4">
+      <a href="#acasa" class="text-2xl font-extrabold tracking-tight text-yellow-200">TOM KRAUSS DESING</a>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#acasa" class="hover:text-yellow-200 transition">Acasă</a>
+        <a href="#poveste" class="hover:text-yellow-200 transition">Povestea noastră</a>
+        <a href="#servicii" class="hover:text-yellow-200 transition">Ateliere & Servicii</a>
+        <a href="#avantaje" class="hover:text-yellow-200 transition">De ce noi</a>
+        <a href="#proces" class="hover:text-yellow-200 transition">Proces</a>
+        <a href="#viziune" class="hover:text-yellow-200 transition">Viziune</a>
+        <a href="#contact" class="hover:text-yellow-200 transition">Contact</a>
+      </nav>
+      <button id="openContact" class="btn bg-yellow-300 text-green-900 px-4 py-2 rounded-lg font-semibold shadow-lg md:ml-6">Scrie-ne</button>
+    </div>
+  </div>
+</header>
+
+<section id="acasa" class="bg-hero relative min-h-screen flex items-center">
+  <div class="absolute inset-0 backdrop"></div>
+  <div class="relative max-w-7xl mx-auto px-4 w-full">
+    <div class="pt-24 md:pt-32 grid md:grid-cols-2 gap-8 items-center">
+      <div class="space-y-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-yellow-100">Mobilier care respiră liniște. Bucătării care inspiră ritual.</h1>
+        <p class="text-lg md:text-xl text-green-100">Fabricăm mobilier rezidențial și instituțional, cu accent pe corpuri de bucătărie, insule ergonomice și spații de depozitare inteligent integrate. Din țeapă masivă, MDF vopsit și structuri compozite certificate, îmbinăm tehnologia CNC cu meșteșugul finisajului manual.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#servicii" class="btn inline-block bg-yellow-300 text-green-900 px-6 py-3 rounded-xl font-semibold shadow-xl">Vezi colecțiile</a>
+          <a href="#poveste" class="btn inline-block bg-green-800 px-6 py-3 rounded-xl font-semibold shadow-inner border border-green-700">Descoperă filosofia</a>
+        </div>
+      </div>
+      <div class="grid gap-6">
+        <div class="bg-green-800 bg-opacity-60 rounded-3xl p-6 neu card-shadow">
+          <h3 class="text-xl font-bold text-yellow-200">Arhitectură a detaliului</h3>
+          <p class="text-green-100">Fronturi fără mâner cu profil Gola ascuns, balamale cu amortizare integrată și sertare cu extragere totală sincronă. Realizăm muchii invizibile și cantuire laser.</p>
+        </div>
+        <div class="bg-green-800 bg-opacity-60 rounded-3xl p-6 neu card-shadow">
+          <h3 class="text-xl font-bold text-yellow-200">Sustenabilitate reală</h3>
+          <p class="text-green-100">Plăci cu emisii reduse de formaldehidă, lacuri pe bază de apă și trasabilitate a lemnului. Ambalaje refolosibile pentru montajul la locație.</p>
+        </div>
+        <div class="bg-green-800 bg-opacity-60 rounded-3xl p-6 neu card-shadow">
+          <h3 class="text-xl font-bold text-yellow-200">Integrare conectată</h3>
+          <p class="text-green-100">Corpuri pregătite pentru iluminare LED dimabilă, prize ascunse, feronerie inteligentă și electrocasnice built-in cu ventilație optimizată.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="poveste" class="section bg-gradient-to-b from-green-900 to-green-950">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-3xl">
+      <p class="uppercase tracking-widest text-green-300 text-xs">Capitolul I</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-200 mb-6">Cine suntem: atelierul în care lemnul capătă funcțiune</h2>
+      <p class="text-green-100 leading-relaxed">TOM KRAUSS DESING SRL reunește ingineri, designeri și tâmplari licențiați pentru a produce mobilier și dulapuri de bucătărie destinate locuințelor, birourilor, spitalelor și spațiilor educaționale. Suntem un producător local din București, cu flux industrial pentru serii scurte și proiecte la comandă.</p>
+      <p class="text-green-100 leading-relaxed mt-4">Lucrăm cu specificații arhitecturale, planuri de instalații și standarde instituționale, respectând rezistențe, igienă și accesibilitate. Fiecare piesă este modelată parametric și simulată înainte de debitare pentru a elimina erori în șantier.</p>
+      <p class="text-green-100 leading-relaxed mt-4">Ne diferențiem prin controlul complet al producției: proiectare CAD/CAM, prelucrare CNC, presare, finisaj, asamblare și montaj. Astfel, timeline-urile sunt ferme, iar garanțiile reale.</p>
+      <p class="text-green-100 leading-relaxed mt-4">Pentru bucătării, configurăm triunghiul ergonomic gătit-spălat-depozitat, fluxuri lineare pentru catering și soluții pentru spații mici cu corpuri retractabile.</p>
+      <p class="text-green-100 leading-relaxed mt-4">Colaborăm transparent cu arhitecți, dezvoltatori și instituții, oferind devize detaliate, fișe tehnice și mostre. Proiectele se predau curat, calibrate la milimetru.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicii" class="section bg-green-950">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="mb-10">
+      <p class="uppercase tracking-widest text-green-300 text-xs">Capitolul II</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-200">Ateliere & Servicii</h2>
+      <p class="text-green-200 mt-3">Trei direcții principale cu execuție completă și responsabilitate unică.</p>
+    </div>
+    <div class="grid md:grid-cols-3 grid-gap">
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-2xl font-bold text-yellow-200 mb-3">Bucătării la comandă</h3>
+        <p class="text-green-100">Proiectăm fronturi, carcase și insule în sisteme modulare sau complet bespoke. Integram feronerie premium, management de deșeuri și iluminare funcțională.</p>
+        <p class="text-green-100 mt-2">Optimizăm fluxul culinar și spațiul prin corpuri înălțate, sertare adânci, colțare rotative și panouri magnetice. Fiecare milimetru este folosit inteligent.</p>
+        <p class="text-green-100 mt-2">Oferim vizualizări 3D, mostre de fronturi, teste de rezistență la pete și consultanță pentru electrocasnice potrivite.</p>
+      </div>
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-2xl font-bold text-yellow-200 mb-3">Mobilier instituțional</h3>
+        <p class="text-green-100">Dulapuri pentru laboratoare, posturi de lucru pentru clinici, biblioteci modulare și recepții. Materiale HPL și ABS, colțuri protejate și feronerie intens-usage.</p>
+        <p class="text-green-100 mt-2">Respectăm standarde stricte de igienă, cablare tehnică și accesibilitate. Delivered ready-to-install, cu documentație pentru mentenanță.</p>
+        <p class="text-green-100 mt-2">Asigurăm măsurători pe teren, mock-up funcțional și montaj cu echipă acreditată, inclusiv lucrări în ferestre de noapte.</p>
+      </div>
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-2xl font-bold text-yellow-200 mb-3">Fronturi & Finisaje</h3>
+        <p class="text-green-100">Fronturi din MDF vopsit, furnir natural, lemn masiv și compozite texturate. Cantuire laser, profile Gola și mâner ascuns.</p>
+        <p class="text-green-100 mt-2">Finisaje pe bază de apă, uleiuri dure și lacuri poliuretanice pentru trafic intens. Paletar extins cu texturi mate, soft-touch și anti-amprentă.</p>
+        <p class="text-green-100 mt-2">Audităm probele în lumină D65 și scenarii calde pentru a asigura consistența cromatică în spațiu real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="avantaje" class="section bg-gradient-to-b from-green-950 to-green-900">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="mb-10">
+      <p class="uppercase tracking-widest text-green-300 text-xs">Capitolul III</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-200">Trei motive să lucrăm împreună</h2>
+      <p class="text-green-200 mt-3">Beneficii concrete, măsurabile, pe care clienții le simt imediat.</p>
+    </div>
+    <div class="grid md:grid-cols-3 grid-gap">
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Precizie industrială</h3>
+        <p class="text-green-100 mt-2">Toleranțe de montaj sub 1,5 mm prin debitare CNC și calibrare la fața locului. Mai puține vizite repetate, mai puțin stres, finalizare predictibilă.</p>
+      </div>
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Transparență financiară</h3>
+        <p class="text-green-100 mt-2">Devize pe faze, listă de feronerie și materiale, grafic de plată corelat cu progresul. Știi exact ce primești, când și de ce costă.</p>
+      </div>
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Garanție și servicii</h3>
+        <p class="text-green-100 mt-2">Garanție extinsă, set de retuș și ghid de îngrijire. Vizite de reglaj după 60 de zile, astfel încât corpurile să rămână perfect aliniate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proces" class="section bg-green-950">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="mb-10">
+      <p class="uppercase tracking-widest text-green-300 text-xs">Capitolul IV</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-200">Cum se naște proiectul tău</h2>
+      <p class="text-green-200 mt-3">Trei etape clare care reduc timpul până la montaj.</p>
+    </div>
+    <div class="grid md:grid-cols-3 grid-gap">
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Explorare</h3>
+        <p class="text-green-100 mt-2">Brief funcțional, buget-range și selecție de materiale. Preluăm măsurători și realizăm un concept 3D cu două alternative de layout.</p>
+      </div>
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Proiectare</h3>
+        <p class="text-green-100 mt-2">Desen tehnic, plan de tâmplărie și liste de tăiere. Confirmăm feroneria, lumina și electrocasnicele. Calendar de producție și montaj.</p>
+      </div>
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Producție & Montaj</h3>
+        <p class="text-green-100 mt-2">Debitare CNC, finisaj, preasamblare, apoi montaj curat la locație. Reglaje fine, test de funcționare și predare cu fișe de întreținere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="viziune" class="section bg-gradient-to-b from-green-950 to-green-900">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="mb-10">
+      <p class="uppercase tracking-widest text-green-300 text-xs">Capitolul V</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-200">Misiune, viziune și diferențiatori</h2>
+      <p class="text-green-200 mt-3">Ne asumăm un impact pozitiv, în casă și în instituție.</p>
+    </div>
+    <div class="grid md:grid-cols-2 grid-gap">
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Misiune</h3>
+        <p class="text-green-100 mt-2">Să transformăm funcțiunile zilnice ale bucătăriei și spațiilor de lucru într-un ritual fluid, estetic și durabil, prin mobilier configurat pe date reale de utilizare.</p>
+        <h3 class="text-xl font-bold text-yellow-200 mt-6">Viziune</h3>
+        <p class="text-green-100 mt-2">Orașe în care mobilierul local, bine proiectat, reduce risipa, optimizează spațiul și aduce calm în rutina oamenilor.</p>
+      </div>
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Ce ne diferențiază</h3>
+        <ul class="mt-3 space-y-3">
+          <li class="text-green-100">Modelare parametrică: cote ajustate instant, fără reproiectare completă.</li>
+          <li class="text-green-100">Bibliotecă de module testate pentru instituții: implementare rapidă, mentenanță facilă.</li>
+          <li class="text-green-100">Laborator de finisaje: reproducem nuanțe după referințe reale de material, nu doar după ecran.</li>
+          <li class="text-green-100">Piese gândite pentru reparabilitate: componente înlocuibile, instrucțiuni clare.</li>
+          <li class="text-green-100">Respect pentru sănătate: adezivi și lacuri cu emisii reduse, ventilație corectă a carcaselor.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section bg-green-950">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="mb-10">
+      <p class="uppercase tracking-widest text-green-300 text-xs">Capitolul VI</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-200">Hai să începem discuția</h2>
+      <p class="text-green-200 mt-3">Folosește butonul pentru a deschide fereastra de contact. Nu solicităm date sensibile; doar informații necesare pentru a răspunde prin e-mail.</p>
+    </div>
+    <div class="bg-green-800 rounded-3xl p-10 neu card-shadow flex items-center justify-between">
+      <div>
+        <h3 class="text-2xl font-bold text-yellow-200">Trimite un mesaj</h3>
+        <p class="text-green-100 mt-2">Spune-ne pe scurt ce spațiu dorești să amenajezi și în ce orizont de timp.</p>
+      </div>
+      <button id="openContact2" class="btn bg-yellow-300 text-green-900 px-6 py-3 rounded-xl font-semibold shadow-xl">Deschide formularul</button>
+    </div>
+  </div>
+</section>
+
+<div id="contactModal" class="fixed inset-0 hidden items-center justify-center z-50">
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div class="relative bg-green-900 rounded-3xl p-8 w-11/12 md:w-2/3 lg:w-1/2 neu card-shadow">
+    <div class="flex items-center justify-between">
+      <h3 class="text-2xl font-bold text-yellow-200">Mesaj rapid</h3>
+      <button id="closeContact" class="text-green-200 px-3 py-1 rounded-lg bg-green-800">Închide</button>
+    </div>
+    <form id="contactForm" class="mt-6 space-y-5">
+      <div>
+        <label for="nume" class="block text-sm font-semibold text-green-200">Nume complet</label>
+        <input id="nume" name="nume" type="text" required placeholder="Ex: Andrei Popescu" class="mt-2 w-full rounded-xl bg-green-800 border border-green-700 px-4 py-3 text-green-100 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-semibold text-green-200">Email</label>
+        <input id="email" name="email" type="email" required placeholder="Ex: nume@domeniu.ro" class="mt-2 w-full rounded-xl bg-green-800 border border-green-700 px-4 py-3 text-green-100 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+      </div>
+      <div>
+        <label for="subiect" class="block text-sm font-semibold text-green-200">Subiect</label>
+        <input id="subiect" name="subiect" type="text" required placeholder="Proiect bucătărie, mobilier instituțional, ofertă..." class="mt-2 w-full rounded-xl bg-green-800 border border-green-700 px-4 py-3 text-green-100 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+      </div>
+      <div>
+        <label for="mesaj" class="block text-sm font-semibold text-green-200">Mesaj</label>
+        <textarea id="mesaj" name="mesaj" rows="6" required placeholder="Dimensiuni aproximative, materiale preferate, termen dorit, buget estimativ." class="mt-2 w-full rounded-xl bg-green-800 border border-green-700 px-4 py-3 text-green-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"></textarea>
+      </div>
+      <div class="flex items-center justify-between">
+        <div class="text-xs text-green-300">Prin trimitere, confirmi că informațiile furnizate sunt corecte și că ești de acord să te contactăm la emailul indicat.</div>
+        <button type="submit" class="btn bg-yellow-300 text-green-900 px-6 py-3 rounded-xl font-semibold shadow-xl">Trimite</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="successModal" class="fixed inset-0 hidden items-center justify-center z-50">
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div class="relative bg-green-900 rounded-3xl p-8 w-11/12 md:w-1/2 neu card-shadow text-center">
+    <h3 class="text-2xl font-extrabold text-yellow-200">Mesajul tău a fost trimis</h3>
+    <p class="text-green-100 mt-3">Îți mulțumim pentru interes. Un consultant TOM KRAUSS DESING SRL îți va răspunde prin e-mail în cel mai scurt timp.</p>
+    <button id="closeSuccess" class="mt-6 btn bg-yellow-300 text-green-900 px-6 py-3 rounded-xl font-semibold shadow-xl">Închide</button>
+  </div>
+</div>
+
+<section class="section bg-green-900">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid md:grid-cols-3 grid-gap">
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Studii de caz rapide</h3>
+        <p class="text-green-100 mt-2">Spital universitar: 146 corpuri HPL, feronerie inox, montaj în 5 nopți consecutive. Școală: bibliotecă modulară cu 512 rafturi, protecție ABS, livrare în 12 zile.</p>
+      </div>
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Specificații uzuale</h3>
+        <ul class="mt-3 space-y-2">
+          <li class="text-green-100">Carcase: PAL 18 mm E1 sau compact 12 mm</li>
+          <li class="text-green-100">Fronturi: MDF vopsit 19 mm, furnir sau lemn</li>
+          <li class="text-green-100">Glisiere: extragere totală, soft-close</li>
+          <li class="text-green-100">Iluminare: benzi LED dimabile, CRI 90+</li>
+          <li class="text-green-100">Garanție: până la 5 ani</li>
+        </ul>
+      </div>
+      <div class="bg-green-800 rounded-3xl p-8 neu card-shadow">
+        <h3 class="text-xl font-bold text-yellow-200">Fraze utile pentru formular</h3>
+        <ul class="mt-3 space-y-2">
+          <li class="text-green-100">„Am nevoie de o ofertă pentru o bucătărie în L, 3.2m x 2.1m.”</li>
+          <li class="text-green-100">„Instituție publică: recepție și două birouri, materiale HPL.”</li>
+          <li class="text-green-100">„Dorim fronturi soft-touch, blat compact și insulă cu priză pop-up.”</li>
+          <li class="text-green-100">„Termen estimat de montaj: în aproximativ 6 săptămâni.”</li>
+          <li class="text-green-100">„Buget orientativ: 7.000–10.000 EUR.”</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-green-950">
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <div class="grid md:grid-cols-3 grid-gap items-start">
+      <div>
+        <h4 class="text-yellow-200 font-bold text-xl">TOM KRAUSS DESING SRL</h4>
+        <p class="text-green-200 mt-2">Producător de mobilier rezidențial și instituțional, specializat în corpuri de bucătărie și fronturi premium.</p>
+      </div>
+      <div>
+        <h4 class="text-yellow-200 font-bold text-xl">Date de contact</h4>
+        <p class="text-green-100 mt-2">Adresă: STR. PLT. NITA ION NR. 20, București</p>
+        <p class="text-green-100 mt-1">Email: <a href="mailto:info@tomkraussdesing.pro" class="underline text-yellow-200">info@tomkraussdesing.pro</a></p>
+      </div>
+      <div>
+        <h4 class="text-yellow-200 font-bold text-xl">Linkuri rapide</h4>
+        <ul class="mt-2 space-y-2">
+          <li><a href="#servicii" class="hover:text-yellow-200">Servicii</a></li>
+          <li><a href="#proces" class="hover:text-yellow-200">Proces</a></li>
+          <li><a href="#contact" class="hover:text-yellow-200">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-green-800 mt-10 pt-6 text-xs text-green-300">
+      © <span id="year"></span> TOM KRAUSS DESING SRL. Toate drepturile rezervate.
+    </div>
+  </div>
+</footer>
+
+<script>
+const openBtns=[document.getElementById('openContact'),document.getElementById('openContact2')];
+const contactModal=document.getElementById('contactModal');
+const closeContact=document.getElementById('closeContact');
+const successModal=document.getElementById('successModal');
+const closeSuccess=document.getElementById('closeSuccess');
+const form=document.getElementById('contactForm');
+openBtns.forEach(b=>b.addEventListener('click',()=>{contactModal.classList.remove('hidden');contactModal.classList.add('flex');document.body.classList.add('modal-open');}));
+closeContact.addEventListener('click',()=>{contactModal.classList.add('hidden');contactModal.classList.remove('flex');document.body.classList.remove('modal-open');});
+contactModal.addEventListener('click',e=>{if(e.target===contactModal||e.target.classList.contains('bg-opacity-60')){contactModal.classList.add('hidden');contactModal.classList.remove('flex');document.body.classList.remove('modal-open');}});
+closeSuccess.addEventListener('click',()=>{successModal.classList.add('hidden');successModal.classList.remove('flex');document.body.classList.remove('modal-open');});
+successModal.addEventListener('click',e=>{if(e.target===successModal||e.target.classList.contains('bg-opacity-60')){successModal.classList.add('hidden');successModal.classList.remove('flex');document.body.classList.remove('modal-open');}});
+form.addEventListener('submit',async(e)=>{e.preventDefault();const payload={nume:form.nume.value.trim(),email:form.email.value.trim(),subiect:form.subiect.value.trim(),mesaj:form.mesaj.value.trim(),timestamp:new Date().toISOString()};if(!payload.nume||!payload.email||!payload.subiect||!payload.mesaj)return;contactModal.classList.add('hidden');contactModal.classList.remove('flex');successModal.classList.remove('hidden');successModal.classList.add('flex');document.body.classList.add('modal-open');try{await new Promise(r=>setTimeout(r,700));}catch(err){}form.reset();});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
